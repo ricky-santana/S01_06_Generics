@@ -15,4 +15,4 @@ Main, con el método main(), donde se crea un objeto de tipos Smartphone y se pa
 ¿El método limitado por la interfaz Phone, dentro GenericUtils, puede llamar takePhoto()? ¿Por qué sí o por qué no? Reflexiona y compruébalo en el código.
 
 ## 🧩 Explicaciones
--
+- El método usePhone solo admite que le pasemos por parámetro objetos que implementen la interfaz Phone que es la que tiene el método call(). No se puede invocar al metodo takePhoto porque no pertenece a la interfaz, el método solo podrá hacer llamadas a métodos que estén dentro de la interfaz que le hemos dicho que reciba por parámetro. La "utilidad" de esto es que si creo un objeto NoSmartPhone que implemente la interfaz podré invocar dicho método, así tanto objetos SmartPhone como NoSmarphone serán aceptados por el método por parámetro porque ambos implementan la interfaz Phone y ambos está forzados a tener un método call.
