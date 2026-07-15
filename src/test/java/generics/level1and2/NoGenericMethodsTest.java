@@ -1,5 +1,6 @@
 package generics.level1and2;
 
+import generics.level1and2.NoGenericMethods;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
