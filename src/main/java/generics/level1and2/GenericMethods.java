@@ -11,7 +11,7 @@ public class GenericMethods {
     @SafeVarargs
     public static <A> void printAll(A ... elements){
         for (A e : elements){
-            System.out.println(Arrays.toString(elements));
+            System.out.println(e.toString());
         }
     }
 }
