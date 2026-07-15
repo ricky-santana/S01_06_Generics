@@ -1,14 +1,6 @@
 package generics.level1and2;
-
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GenericMethodTest {
@@ -28,7 +20,5 @@ public class GenericMethodTest {
             GenericMethods.printElements(age, person, surname);
         });
     }
-
-
 
 }
