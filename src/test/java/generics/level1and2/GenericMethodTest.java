@@ -1,4 +1,5 @@
 package generics.level1and2;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,4 +22,15 @@ public class GenericMethodTest {
         });
     }
 
+    @Test
+    void shouldAcceptVariableArgumentsAndTypes() {
+
+        Person persona = new Person("David", "Silva", 41);
+
+        assertDoesNotThrow(() -> {
+            GenericMethods.printAll("Un String");
+            GenericMethods.printAll(1, 2, 3, 4, 5);
+            GenericMethods.printAll("Barça Campeón", persona, 99.9, true, 'X');
+        });
+    }
 }
