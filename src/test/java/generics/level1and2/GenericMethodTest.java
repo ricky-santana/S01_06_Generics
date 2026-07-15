@@ -16,7 +16,7 @@ public class GenericMethodTest {
         Person person = new Person(name, surname, age);
 
         assertDoesNotThrow(() -> {
-            GenericMethods.printElements(person, name, age);
+            GenericMethods.printElements(person, age, name);
             GenericMethods.printElements(age, person, surname);
         });
     }
