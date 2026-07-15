@@ -1,4 +1,5 @@
 package generics.level1and2;
+import java.util.Arrays;
 
 public class GenericMethods {
 
@@ -6,5 +7,11 @@ public class GenericMethods {
         System.out.println(elemnt1.toString() + "\n" +
                 elemnt2.toString()  + "\n" +
                 element3);
+    }
+    @SafeVarargs
+    public static <A> void printAll(A ... elements){
+        for (A e : elements){
+            System.out.println(Arrays.toString(elements));
+        }
     }
 }
