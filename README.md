@@ -15,4 +15,4 @@ Aplicar restricciones (`bounded types`) para controlar qué tipos de objetos se 
 Reforzar la relación entre genéricos, interfaces y polimorfismo.
 
 ## 🧩 Explicaciones
--
+- Los Niveles están divididos por ramas. Cada nivel tiene su rama.
